@@ -1,0 +1,27 @@
+@import './button.scss';
+
+body, div, ol, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, form, fieldset, legend, input { 
+  margin:0;
+  padding:0;
+}
+
+body, html {
+  height: 100%
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+.margin_top_10 {
+  margin-top: 10px;
+}
+
+.width_260 {
+  width: 260px;
+}
+
+.indent_2 {
+  margin-left: 2em;
+}

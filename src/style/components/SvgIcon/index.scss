@@ -1,0 +1,23 @@
+@import '@/style/color.scss';
+
+$width: 20px;
+$height: 20px;
+
+.svg-icon {
+  width: $width;
+  height: $height;
+  margin: 5px;
+  &.svg-white {
+    margin: 0px;
+    fill: $White;
+  }
+  &.svg-black {
+    fill: $Black;
+  }
+  &.svg-lawnGreen {
+    fill: $LawnGreen;
+  }
+  &.svg-crimson {
+    fill: $Crimson;
+  }
+}

@@ -1,0 +1,33 @@
+.el-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.el-input {
+  width: 260px;
+}
+
+.el-form-item {
+  padding: 10px;
+}
+
+.login-container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inside-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 10px;
+}

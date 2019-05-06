@@ -1,0 +1,38 @@
+// TODO: test
+$SIDE_WIDTH: 260px;
+$SIDE_REMAIN_WIDTH: 65px;
+
+.el-container {
+  height: 100%;
+  width: 100%;
+}
+
+.el-header, .el-main {
+  padding: 0;
+}
+
+.layout-container {
+  height: 100%;
+  width: 100%;
+}
+
+.asidebar {
+  width: $SIDE_WIDTH !important;
+  transition: width 0.38s ease-out;
+}
+
+.hideSidebar {
+  width: $SIDE_REMAIN_WIDTH !important;
+}
+
+.sidebar-container {
+  height: 100%;
+}
+
+.navbar-container {
+  width: 100%;
+}
+
+.contents-container {
+  margin: 0 10px;
+}
