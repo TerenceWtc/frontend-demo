@@ -20,10 +20,8 @@ router.beforeEach(async (to, from, next) => {
       next('/')
     } else {
       if (store.getters.menus === undefined) {
-        store.dispatch('GetInfo').then(response => {
-        })
-        store.dispatch('GetMenus').then(response => {
-        })
+        store.dispatch('GetInfo')
+        store.dispatch('GetMenus')
       }
       next()
     }

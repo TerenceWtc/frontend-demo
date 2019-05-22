@@ -10,7 +10,7 @@
         <svg-icon :name="item.icon" :iconClass="`svg-icon svg-white`"/>
         <span slot="title">{{$t('label.' + item.title)}}</span>
       </el-menu-item> -->
-      <sidebar-item/>
+      <sidebar-item v-for="item in menus" :key="item.code" :item="item"/>
     </el-menu>
   </div>
 </template>
@@ -39,7 +39,6 @@ export default {
       'menus'
     ]),
     sidebar () {
-      console.log(this.menus)
       return this.$store.getters.sidebar
     }
   },

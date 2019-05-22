@@ -107,5 +107,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../../../style/demoes/formValidation/index.scss';
+@import '../../../style/demos/formValidation/index.scss';
 </style>

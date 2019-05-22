@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import layout from '@/views/layout/index'
 // import home from '@/views/home/index'
-import dateTime from '@/views/dateTime/index'
+// import dateTime from '@/views/dateTime/index'
 
 Vue.use(Router)
 
@@ -51,26 +51,26 @@ export default new Router({
       ]
     },
     {
-      path: '/demoes',
+      path: '/demos',
       component: layout,
       children: [
         {
-          path: 'checkbox',
+          path: 'checkbox/index',
           name: 'checkbox',
           // component: () => import('@/views/demoes/checkbox/index')
-          component: resolve => require(['@/views/demoes/checkbox/index'], resolve)
+          component: resolve => require(['@/views/demos/checkbox/index'], resolve)
         },
         {
-          path: 'formValidation',
+          path: 'formValidation/index',
           name: 'formValidation',
           // component: () => import('@/views/demoes/formValidation/index')
-          component: resolve => require(['@/views/demoes/formValidation/index'], resolve)
+          component: resolve => require(['@/views/demos/formValidation/index'], resolve)
         },
         {
-          path: 'line',
+          path: 'line/index',
           name: 'e-line',
           // component: () => import('@/views/demoes/line/index')
-          component: resolve => require(['@/views/demoes/line/index'], resolve)
+          component: resolve => require(['@/views/demos/line/index'], resolve)
         }
       ]
     },
@@ -79,10 +79,15 @@ export default new Router({
     //   name: 'home',
     //   component: home
     // },
+    // {
+    //   path: '/dateTime',
+    //   name: 'dateTime',
+    //   component: dateTime
+    // },
     {
-      path: '/dateTime',
-      name: 'dateTime',
-      component: dateTime
+      path: '*',
+      name: '404',
+      component: resolve => require(['@/views/error/404'], resolve)
     }
   ]
 })

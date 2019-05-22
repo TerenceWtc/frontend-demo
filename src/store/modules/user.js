@@ -94,7 +94,7 @@ const user = {
           commit('SET_NAME', data.name)
           commit('SET_GROUP_ID', data.groupId)
           commit('SET_GROUP_NAME', data.groupName)
-          resolve()
+          resolve(data)
         }).catch(error => {
           reject(error)
         })
@@ -104,7 +104,7 @@ const user = {
       return new Promise((resolve, reject) => {
         getMenuList(state.accessToken).then(response => {
           commit('SET_MENUS', response.data)
-          resolve()
+          resolve(response.data)
         }).catch(error => {
           reject(error)
         })
