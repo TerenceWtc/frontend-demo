@@ -64,9 +64,9 @@ export default {
     getList () {
       let that = this
       this.loading = true
-      let param = JSON.stringify(this.pageVo)
-      param = encodeURIComponent(param)
-      userList(param).then(response => {
+      let pageInfo = JSON.stringify(this.pageVo)
+      pageInfo = encodeURIComponent(pageInfo)
+      userList(pageInfo).then(response => {
         that.tableData = response.data.rows
         that.pageVo.total = response.data.total
         that.loading = false

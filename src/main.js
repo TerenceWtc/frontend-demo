@@ -12,6 +12,7 @@ import { refresh } from '@/api/auth/refresh'
 // white list for not redirection
 const whiteList = ['/login']
 router.beforeEach(async (to, from, next) => {
+  console.log('in to router')
   let accessToken = store.getters.accessToken
   if (accessToken) {
     await refresh()

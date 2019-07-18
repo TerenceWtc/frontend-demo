@@ -1,6 +1,6 @@
 import fetch from '@/api/fetch'
 
-const BASE_URL = '/admin/group'
+const BASE_URL = '/admin/sysGroup'
 
 export function groupIdAndName () {
   return fetch({

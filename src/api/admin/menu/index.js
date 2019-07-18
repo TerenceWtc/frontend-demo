@@ -1,6 +1,6 @@
 import fetch from '@/api/fetch'
 
-const BASE_URL = '/admin/menu'
+const BASE_URL = '/admin/sysMenu'
 
 export function getMenuList (token) {
   const param = {

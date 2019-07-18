@@ -1,6 +1,6 @@
 import fetch from '@/api/fetch'
 
-const BASE_URL = '/admin/user'
+const BASE_URL = '/admin/sysUser'
 
 export function getUserInfo (token) {
   const param = {
@@ -13,9 +13,9 @@ export function getUserInfo (token) {
   })
 }
 
-export function userList (params) {
+export function userList (pageInfo) {
   const param = {
-    page: params
+    pageInfo: pageInfo
   }
   return fetch({
     url: `${BASE_URL}/list`,

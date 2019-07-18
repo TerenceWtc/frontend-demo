@@ -5,7 +5,7 @@
         <el-input class="width_260" type="text" v-model="loginForm.username" :placeholder="$t('placeholder.username')"/>
       </el-form-item>
       <el-form-item prop="password" :label="$t('label.password')">
-        <el-input class="width_260" type="password" v-model="loginForm.password" :placeholder="$t('placeholder.password')"/>
+        <el-input class="width_260" type="password" v-model="loginForm.password" @keyup.enter.native="login" :placeholder="$t('placeholder.password')"/>
       </el-form-item>
     </el-form>
     <el-button class="btn" type="primary" @click="login">{{$t('button.login')}}</el-button>
